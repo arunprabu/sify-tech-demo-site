@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<!-- 3. External Styles -->
+	<link rel="stylesheet" href="./assets/styles/main.css">
+ 
+	<!-- 2. Internal Styles -- page wide -->
+	<style>
+		section {   /* element Selector */
+			background-color: yellow;  /* property: value */
+			text-align: center;
+			width: 33.33%;
+			float:left;
+			padding-top:100px;
+			padding-bottom: 100px;
+		}
+
+		#heading1{ /* id selector */
+			font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+			font-size: 40px;
+			color: #ffffff;
+		}
+
+		.learnMore{ /* class selector */
+			background-color: red;
+			border: 3px solid yellow;
+			padding: 20px 50px;
+			color: yellow;
+			border-radius: 30px;
+		}
+
+		.para{ /* class selector */
+			font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+			font-size: 16px;
+			font-weight: normal;
+		}
+
+		.mainSection{
+			height: 188px;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<header>
+		<a href="index.html" class="logoLink"><img src="./assets/images/sify-logo.png" alt="Sify Technologies Logo"></a>
+
+		<nav class="mainNav">
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="services.html">Services</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact Us</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+													<!-- 1. inline styles -->
+	<main class="mainSection" style="background-color:dodgerblue; text-align: center;">
+		<h1 id="heading1">SIFY FOR DIGITAL BUSINESS</h1>
+		<a href="about.html" class="learnMore">Learn More...</a>
+	</main>
+
+	<div>
+		<section>
+			<img src="https://placehold.co/250x200" alt="Banking, Financial Services">
+			<h2>Banking, Financial Services & Insurance</h2>
+			<p class="para">Sify offers a range of digital transformation solutions</p>
+		</section>
+
+		<section>
+			<img src="https://placehold.co/250x200" alt="">
+			<h2>Healthcare</h2>
+			<p class="para">Sify helps trim costs by enhancing efficiency in healthcare</p> 
+		</section>
+
+		<section>
+			<img src="https://placehold.co/250x200" alt="">
+			<h2>Manufacturing</h2>
+			<p class="para">Go digital with cloud solutions that lower costs</p> 
+		</section>
+	</div>
+
+	<footer>
+		<hr>
+		<p>Copyright &copy; 2020 | Arun</p>
+	</footer>
+
+</body>
+
+</html>
