@@ -92,3 +92,26 @@ button{
   background-color: rgb(163 0 0);
   color: #fff;
 }
+
+/* responsive css - mobile friendly  */
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: red;
+  }
+
+  .mapSection{
+    float: none;
+  }
+  [type='reset']{
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  [type='submit']{
+    background-color: yellow;
+    color: #000;
+    font-size: 16px;
+    padding: 5px;
+  }
+
+}
