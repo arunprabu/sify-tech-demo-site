@@ -33,22 +33,29 @@
   <main class="mainSection" style="height: 500px;">
     <h1>Contact Sify Technologies</h1>
 
-    <form class="contactForm textLeft">
+    <form class="contactForm textLeft" onsubmit="contactSubmitHandler(event)">
+      <div id="formStatus" style="background-color: yellow; color: black; display:none;">
+        Saved Successfully!
+      </div>
       <div class="formFields">
         <label>Enter Name</label>
-        <input type="text" placeholder="Enter Full Name">
+        <input type="text" id="fullNameInput" 
+        placeholder="Enter Full Name" value="arun">
       </div>
       <div class="formFields">
         <label>Enter E-Mail</label>
-        <input type="email" placeholder="Enter E-Mail">
+        <input type="email" id="emailInput" 
+        placeholder="Enter E-Mail" value="a@b.com">
       </div>
       <div class="formFields">
         <label>Enter Phone</label>
-        <input type="tel" placeholder="Enter Phone with Country Code">
+        <input type="tel" id="phoneInput" 
+        placeholder="Enter Phone with Country Code" value="3423421">
       </div>
       <div class="formFields">
         <label style="vertical-align: top;">Enter Query</label>
-        <textarea cols="40" rows="6" placeholder="Enter your Query in 160 chars"></textarea>
+        <textarea id="queryInput" cols="40" rows="6" 
+        placeholder="Enter your Query in 160 chars">test query</textarea>
       </div>
       <div class="contactFormBtns">
         <button type="reset">Reset</button>
@@ -56,9 +63,9 @@
       </div>
     </form>
     
-    <section class="mapSection">
+    <!-- <section class="mapSection">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.721731783251!2d80.24630211492597!3d12.989641590844009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267917b12ce2d%3A0x313f809b51520606!2sSify%20Technologies%20Limited!5e0!3m2!1sen!2sin!4v1600153664188!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    </section>
+    </section> -->
   </main>
 
   <footer>
@@ -66,5 +73,6 @@
 		<p>Copyright &copy; 2020 | Arun</p>
   </footer>
   
+  <script src="./assets/scripts/main.js"></script>
 </body>
 </html>

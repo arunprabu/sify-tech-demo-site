@@ -7,31 +7,31 @@
   <title>Document</title>
   <!-- 3. External Styles -->
   <link rel="stylesheet" href="./assets/styles/main.css">
-  
+
 </head>
 
 <body>
 
   <header>
-		<a href="index.html" class="logoLink"><img src="./assets/images/sify-logo.png" alt="Sify Technologies Logo"></a>
+    <a href="index.html" class="logoLink"><img src="./assets/images/sify-logo.png" alt="Sify Technologies Logo"></a>
 
-		<nav class="mainNav">
-			<ul>
-				<li>
-					<a href="index.html">Home</a>
-				</li>
-				<li>
-					<a href="services.html">Services</a>
-				</li>
-				<li>
-					<a href="about.html">About</a>
-				</li>
-				<li>
-					<a href="contact.html">Contact Us</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
+    <nav class="mainNav">
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="services.html">Services</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
   <main class="mainSection">
     <h1>Services</h1>
@@ -52,20 +52,40 @@
         adipisci unde est nobis!</p>
     </article>
 
-    <article  class="textLeft">
+    <article class="textLeft">
       <h2>Manufacturing</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Eveniet vitae labore quam odit officiis iste quos veritatis
         pariatur rerum magni fugiat soluta quo laudantium corrupti molestias,
         adipisci unde est nobis!</p>
     </article>
+
+    <div onclick="divClickHandler">
+      <h2>Dom Examples - Demo</h2>
+
+      <button onclick="btnClickHandler()">Click me</button>
+
+    </div>
+
   </main>
 
   <footer>
     <hr>
-		<p>Copyright &copy; 2020 | Arun</p>
+    <p>Copyright &copy; 2020 | Arun</p>
   </footer>
-  
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <!-- external scripting -->
+  <script src="./assets/scripts/main.js"></script>
+
+  <!-- ideal place for JS  -->
+  <!-- Internal Scripting-->
+  <script>
+    var el = document.getElementsByClassName("mainSection")[0];
+    el.style.backgroundColor = "red";
+  </script>
+
 </body>
 
 </html>
